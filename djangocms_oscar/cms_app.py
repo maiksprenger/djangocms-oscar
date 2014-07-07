@@ -19,6 +19,5 @@ class OscarApp(CMSApp):
         patterns('', *application.urls[0])
     ]
     menus = [CategoriesMenu]
-    app_name = "oscar"
 
 apphook_pool.register(OscarApp)
