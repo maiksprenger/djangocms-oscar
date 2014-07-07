@@ -4,3 +4,7 @@ Changelog
 0.1.0 - released July 7th, 2014
 -------------------------------
 Initial release.
+
+unreleased
+----------
+- Added a CMSAttachMenu, which exposes Oscar's categories as CMS menu entries.
