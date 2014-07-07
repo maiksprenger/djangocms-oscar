@@ -5,7 +5,9 @@ Integrate django CMS with Oscar
 ``djangocms-oscar`` eases integration between the content management system
 django CMS and the e-commerce framework Oscar.
 
-It is in an early stage, so use at your own risk.
+It is in an early stage, so use at your own risk. In it's current form, it
+mainly exists to serve as a central point for collaboration. So keep those
+pull requests coming! (:
 
 Features
 ========
@@ -117,7 +119,7 @@ They're a good starting point and can be used like this::
     # settings.py
 
     CMS_TEMPLATES = (
-        ('djangocms_oscar/full_width.html', 'Full width (no sidebars)'),
+        ('djangocms_oscar/full_width.html', 'Full width (no sidebars)'),
         ('djangocms_oscar/with_sidebar.html', 'Two column (left-hand sidebar)'),
     )
 
