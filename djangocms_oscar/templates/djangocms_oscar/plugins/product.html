@@ -1,0 +1,7 @@
+{% load cms_tags thumbnail product_tags %}
+
+{% with instance=plugin.instance %}
+<div>
+    {% render_product instance.product %}
+</div>
+{% endwith %}

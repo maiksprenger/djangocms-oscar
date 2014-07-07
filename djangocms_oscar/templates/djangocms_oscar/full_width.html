@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% load cms_tags menu_tags %}
+
+{# Use a custom breadcrumb template #}
+{% block breadcrumbs %}
+    {% show_breadcrumb 0 "djangocms_oscar/breadcrumb.html" 0 %}
+{% endblock %}
+
+{# Hide header as we put the H1 into the main content below #}
+{% block header %}{% endblock %}
+
+{% block content %}
+    {% placeholder main %}
+{% endblock %}

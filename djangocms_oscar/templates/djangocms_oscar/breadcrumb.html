@@ -1,0 +1,13 @@
+{% load cms_tags menu_tags %}
+
+<ul class="breadcrumb">
+    {% for a in ancestors %}
+        {% if not forloop.last %}
+            <li>
+                <a href="{{ a.get_absolute_url }}">{{ a.get_menu_title }}</a>
+                <span class="divider">/</span>
+            </li>
+        {% endif %}
+    {% endfor %}
+    <li class="active">{% page_attribute "page_title" %}</li>
+</ul>
