@@ -1,9 +1,12 @@
 # -*- coding: utf-8 -*-
 from django.utils.translation import ugettext_lazy as _
 from django.conf.urls import patterns
+
 from cms.app_base import CMSApp
 from cms.apphook_pool import apphook_pool
 from oscar.app import application
+
+from .menu import CategoriesMenu
 
 
 class OscarApp(CMSApp):
@@ -15,6 +18,7 @@ class OscarApp(CMSApp):
     urls = [
         patterns('', *application.urls[0])
     ]
+    menus = [CategoriesMenu]
     app_name = "oscar"
 
 apphook_pool.register(OscarApp)
