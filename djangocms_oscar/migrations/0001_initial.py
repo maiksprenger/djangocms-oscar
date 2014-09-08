@@ -8,7 +8,7 @@ from django.db import models
 class Migration(SchemaMigration):
 
     depends_on = (
-        ("catalogue", "0020_auto__chg_field_productattributevalue_value_text__chg_field_productatt.py"),
+        ("catalogue", "0020_auto__chg_field_productattributevalue_value_text__chg_field_productatt"),
     )
 
     def forwards(self, orm):
