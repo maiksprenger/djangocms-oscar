@@ -7,6 +7,10 @@ from django.db import models
 
 class Migration(SchemaMigration):
 
+    depends_on = (
+        ("catalogue"),
+    )
+
     def forwards(self, orm):
         # Adding model 'FeaturedProduct'
         db.create_table(u'djangocms_oscar_featuredproduct', (
